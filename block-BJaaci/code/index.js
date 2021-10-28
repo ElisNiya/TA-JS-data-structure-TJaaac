@@ -31,19 +31,19 @@ Use the variable named movies to solve the requirement below.
 */
 
 // 1. Log the value of the title key in the first movie of the array named `movies`
-
+console.log(movies.title[0]);
 // 2. Log the value of the title key in the last movie of the array named `movies`
-
+console.log(movies.title[2]);
 // 3. Log the value of the title key in the second movie (index 1) of the array named `movies`
-
+console.log(movies.title[1]);
 // 4. Log the value of the year key in the first movie of the array named `movies`
-
+console.log(movies.year[0]);
 // 5. Log all the named of actors (key named actors) of the first movie
-
+console.log(movies.actors[0]);
 // 6. Log the name of the first actor of the first movie
-
+console.log(movies.actors[0].[0]);
 // 7. Log the name of the last actor of the first movie
-
+console.log(movies.[actors.length-1]);
 // 8. Log the name of the second actor (index 1) of the first movie
 
 // 9. Log the name of the second actor (index 1) of the second movie
