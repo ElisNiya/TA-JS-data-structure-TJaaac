@@ -19,7 +19,51 @@ Hint: (Structure of got variable)
 */
 
 // 1. Log the value of key "houses"
-
+{
+      name: "Starks",
+      people: [
+        {
+          name: "Eddard Stark",
+          description:
+            "Lord of Winterfell - Warden of the North - Hand of the King - Married to Catelyn (Tully) Stark",
+        },
+        {
+          name: "Benjen Stark",
+          description:
+            "Brother of Eddard Stark - First ranger of the Night's Watch",
+        },
+        {
+          name: "Robb Stark",
+          description:
+            "Son of Eddard and Catelyn Stark - Direwolf: Grey Wind",
+        },
+        {
+          name: "Sansa Stark",
+          description:
+            "Daughter of Eddard and Catelyn Stark - Direwolf: Lady",
+        },
+        {
+          name: "Arya Stark",
+          description:
+            "Daughter of Eddard and Catelyn Stark - Direwolf: Nymeria",
+        },
+        {
+          name: "Brandon Stark",
+          description:
+            "Son of Eddard and Catelyn Stark - Direwolf: Summer",
+        },
+        {
+          name: "Rickon Stark Upper",
+          description:
+            "Son of Eddard and Catelyn Stark - Direwolf: Shaggydog",
+        },
+        {
+          name: "Jon Snow",
+          description:
+            "Bastard son of Eddard Stark - Steweard in the Night's Watch - Direwolf: Ghost",
+        },
+      ],
+    },
 // 2. Log the length of the "houses" key
 
 // 3. Log the name of all houses in got one by one
