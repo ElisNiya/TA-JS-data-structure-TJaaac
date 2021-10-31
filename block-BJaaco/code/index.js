@@ -3,12 +3,21 @@ let numbers = [6, 8, 10, 12, 43, 56, 98];
 let userIds = [1230, 234, 1278, 984, 763, 900];
 
 // 1. Add all the values of numbers and userIds array into the new newly created array named `collection`
-let collection = [numbers, userIds]
+let collection = [];
+
+for(let num of numbers){
+  collection.push(num);
+}
+
+for(let id of userIds) {
+  collection.push(id);
+}
 // 2. Add all the even numbers from both arrays numbers and userIds into a newly created array named `evenCollection`
+ let evenCollection = 0;
+
 for(let number of collection) {
-  let evenCollection = 0;
     if(number % 2 === 0) {
-    evenCollection = number.push()
+    evenCollection.push(number);
     }
 }
 // 3. Add all the odd numbers from both arrays numbers and userIds into a newly created array named `oddCollection`
@@ -28,9 +37,15 @@ for(let number of collection) {
     times(0); // []
     times(5); // ['test', 'test', 'test', 'test', 'test']
 */
-
-function times() {
-  // Your code
+let arr = [];
+function times(a,b) {
+  if(a < 1) return [];
+  let final = [];
+  
+  for(let i = 0; i< a; i++) {
+    final.push(b);
+  }
+  return final
 }
 
 // Uncomment the code below and test the output
@@ -54,7 +69,9 @@ function times() {
 */
 
 function revert() {
-  // your code
+  for(let i = arr.length -1; i>= 0; i--) {
+  final.push(arr[i]);
+  }
 }
 
 // Uncomment the code below and test the output
@@ -74,9 +91,22 @@ function revert() {
     clear(['a', undefined, 'd', 0,  'c', 'b']); // ['b', 'c', 'd', 'a']
     clear(['Ryan', null, 0,  'John', 'Bran']); //['Bran', 'John', 'Ryan']
 */
+function isUnwanted(value){
+  return value == false ||
+         value == null ||
+         value == "" ||
+         value == undefined ||
+         value == 0;
+}
 
 function clear() {
-  // your code
+  let final == [];
+  for(let value of arr) {
+      if(!isUnwanted(value)){
+        final.push(value);
+      }
+  }
+ return final;
 }
 
 // Uncomment the code below and test the output
@@ -98,8 +128,12 @@ function clear() {
     arrayToObj(['Ryan', 'John']); // {0: 'Ryan', 1: 'John'}
 */
 
-function arrayToObj() {
-  // your code
+function arrayToObj(arr) {
+  let final = {};
+  for(let i = 0; i < arr.length; i++) {
+      final[i]= arr[i];
+  }
+  return final;
 }
 
 // Uncomment the code below and test the output
